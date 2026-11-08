@@ -5,7 +5,7 @@ import express from 'express';
 const app = express();
 
 // Set port number for server to read.
-const PORT = 3004;
+const PORT = 3010;
 
 // set EJS as the default template.
 app.set('view engine', 'ejs');
