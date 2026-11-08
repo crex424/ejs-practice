@@ -9,7 +9,15 @@
     <header>
         <h1>EJS Practice</h1>
     </header>
-    <h2>Hello, <%= person.name %></h2>
-    <h3>Your occupation is <%= person.occupation %> and your favorite color is <%=person.favoriteColor %></h3>
+    <% if (person.occupation === 'Plumber') { %>
+        <p>You work with pipes!</p>
+    <% } else { %>
+        <p>That's an interesting job!</p>
+    <% } %>
+    <% if (person.favoriteColor === 'Purple') { %>
+        <p>I like purple too!</p>
+    <% } else { %>
+            <p>Thats a cool color too.</p>
+    <% } %>
 </body>
 </html>
