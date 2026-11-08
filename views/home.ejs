@@ -6,9 +6,9 @@
     <title>EJS Practice</title>
 </head>
 <body>
-    <header>
-        <h1>EJS Practice</h1>
-    </header>
+    <!-- Include partials -->
+    <%- include('partials/header') %>
+
     <% if (person.occupation === 'Plumber') { %>
         <p>You work with pipes!</p>
     <% } else { %>
@@ -19,5 +19,7 @@
     <% } else { %>
             <p>Thats a cool color too.</p>
     <% } %>
+
+    <%- include('partials/footer') %>
 </body>
 </html>
